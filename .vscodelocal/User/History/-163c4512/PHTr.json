@@ -1,9 +1,0 @@
-{
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
-    "editor.rulers": [80],
-    "files.exclude": {
-        "**/.vscodelocal/**": true,
-    "**/.venv/**":true,
-    "**/.build/**":true},
-}
