@@ -7,4 +7,5 @@ Acordamos em contrato que o MVP (Minimum Viable Product) será uma versão para 
 Os dados dos funcionários atuais serão fornecidos em um arquivo que pode ser no formato .csv ou .json e este mesmo arquivo poderá ser usado para versões futuras. Nome, Depto, Cargo, Email
 
 ## dundie-rewards
+
 Projeto para estudo do curso Python Base - Linuxtips
