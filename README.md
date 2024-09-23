@@ -9,3 +9,19 @@ Os dados dos funcionários atuais serão fornecidos em um arquivo que pode ser n
 ## dundie-rewards
 
 Projeto para estudo do curso Python Base - Linuxtips
+
+## Installation
+
+```py
+pip install seunome-dundie
+```
+
+```py
+pip install -e `.[dev]`
+```
+
+## Usage
+
+```py
+dundie load assets/people.csv
+```
