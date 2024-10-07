@@ -1,3 +1,5 @@
+#dev dependecies
 ipython
 ipdb
 pudb
+pytest-watch
