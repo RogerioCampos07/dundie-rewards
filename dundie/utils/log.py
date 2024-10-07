@@ -15,7 +15,7 @@ def get_logger(logfile="dundie.log"):
         maxBytes=300,
         backupCount=10,
     )
-    fh.setlevel(LOG_LEVEL)
+    fh.setLevel(LOG_LEVEL)
     fh.setFormatter(fmt)
     log.addHandler(fh)
     return log
