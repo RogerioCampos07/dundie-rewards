@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+  workflow_dispatch:
+
+
+jobs:
+  tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.12]
+        os: [ubuntu-latest]
+    runs-on: ${{matrix.os}}

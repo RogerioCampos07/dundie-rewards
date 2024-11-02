@@ -16,6 +16,8 @@ ipython:
 test:
 	@.venv/bin/pytest -vv -s 
 
+watch:
+	@ls **/*.py | entr pytest
 
 
 clean:            ## Clean unused files.
