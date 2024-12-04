@@ -27,6 +27,9 @@ jobs:
         run: pip install '.[test]'
       - name: Look for style errors
         run: pflake8
+      - name: Check for importing style
+        run: isort --profile=black --check --diff dundie tests
+  
 
   tests:
     needs: lint
@@ -45,6 +48,15 @@ jobs:
         run: pip install '.[test]'
       - name: Run Tests
         run: pytest -v --junitxml=test-result.xml
+
+      - name: "Upload coverage to Codecov"
+        if: ${{ matrix.python-version == '3.10' }}
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage.xml
+          fail_ci_if_error: true
+
       - name: publish junit results
         uses: EnricoMi/publish-unit-test-result-action@v1
         if: always()
