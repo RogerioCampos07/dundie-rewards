@@ -3,3 +3,9 @@ ipython
 ipdb
 pudb
 pytest-watch
+black
+isort
+
+#Code Quality
+flake8
+pyproject-flake8
